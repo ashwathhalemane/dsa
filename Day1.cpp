@@ -18,7 +18,8 @@ int main() {
     string sr;
     // Read and save an integer, double, and String to your variables.
     cin>>I>>D;
-    getline(cin >> ws, S);
+    //eat whitespace
+    getline(cin >> ws, S);//To consume the whitespace or newline between the end of a token and the beginning of the next line:
 
     // Note: If you have trouble reading the entire string, please go back and review the Tutorial closely.
 
@@ -27,7 +28,7 @@ int main() {
     // Print the sum of the double variables on a new line.
 
     sum  = d+D;
-
+    // Let's say we wanted to scale this to 2 decimal places:setprecision(2)
     cout << fixed << setprecision(1) << sum << endl;
     // Concatenate and print the String variables on a new line
     sr=s + S;
